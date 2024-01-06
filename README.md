@@ -129,4 +129,12 @@
 
     SELECT * FROM exist_animal;
 
+11. Объединить все таблицы в одну, при этом сохраняя поля, указывающие на прошлую принадлежность к старым таблицам.
+
+###
+    SELECT id, name_of_anml, bird_day, fk_type FROM HorseDonkey
+    UNION
+    SELECT id, name_of_anml, bird_day, fk_type FROM YoungAnimals;
+
+
     
